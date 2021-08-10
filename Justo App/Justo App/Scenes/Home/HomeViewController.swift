@@ -26,6 +26,7 @@ class HomeViewController: BaseViewController {
     @IBOutlet weak var cityTextField: MDCFilledTextField!
     @IBOutlet weak var countryTextField: MDCFilledTextField!
     @IBOutlet weak var versionLabel: UILabel!
+    @IBOutlet weak var reloadButton: JAButton!
     
     
     var interactor: HomeBusinessLogic?
@@ -63,12 +64,12 @@ class HomeViewController: BaseViewController {
         self.navigationItem.setHidesBackButton(true, animated: true)
         
         settingsUI()
-        
-        let request = Home.Profile.Request()
-        interactor?.profile(request: request)
+        loadData()
     }
     
     // MARK: - Methods
+    
+    // Configure view and some text of TextView
     func settingsUI() {
         
         emailTextField.label.text   = "Email"
@@ -87,7 +88,7 @@ class HomeViewController: BaseViewController {
         phoneTextField.sizeToFit()
         phoneTextField.setFilledBackgroundColor(.clear, for: .normal)
         
-        cityTextField.label.text   = "City"
+        cityTextField.label.text   = "City, State"
         cityTextField.placeholder  = "Enter your city/state"
         cityTextField.sizeToFit()
         cityTextField.setFilledBackgroundColor(.clear, for: .normal)
@@ -97,6 +98,12 @@ class HomeViewController: BaseViewController {
         countryTextField.sizeToFit()
         countryTextField.setFilledBackgroundColor(.clear, for: .normal)
         
+    }
+    
+    // Request data from service
+    func loadData() {
+        let request = Home.Profile.Request()
+        interactor?.profile(request: request)
     }
     
     // SetUp image from url
@@ -120,7 +127,13 @@ class HomeViewController: BaseViewController {
             }
         })
     }
-
+    
+    // MARK: - Actions
+    
+    // Button reload view
+    @IBAction func onClickReload(_ sender: Any) {
+        loadData()
+    }
 }
 
 // MARK: - HomeDisplayLogic
@@ -131,11 +144,11 @@ extension HomeViewController: HomeDisplayLogic {
         let info = viewModel.info
         
         setImage(user.picture.large)
-        nameLabel.text = user.name.first
+        nameLabel.text = "\(user.name.title ?? "") \(user.name.first ?? "") \(user.name.last ?? "")"
         ageLabel.text = String("Age \(user.dob.age ?? 0)")
         passwordTextField.text = user.login.password
         phoneTextField.text = user.cell
-        cityTextField.text = user.location.city
+        cityTextField.text = "\(user.location.city ?? ""), \(user.location.state ?? "")"
         countryTextField.text = user.location.country
         emailTextField.text = user.email
         versionLabel.text = String("v\(info.version)")

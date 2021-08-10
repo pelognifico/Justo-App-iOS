@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		06A3C768ADAD54FBD71DA6BA /* Pods_Justo_App_Justo_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54274C5654EFDCAC94990E59 /* Pods_Justo_App_Justo_AppUITests.framework */; };
+		4509EF8826C2C76700BD9937 /* JAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4509EF8726C2C76700BD9937 /* JAButton.swift */; };
 		451EF7F626BD7AFC0063C28A /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EF7F426BD7AFC0063C28A /* AppRoute.swift */; };
 		451EF7F726BD7AFC0063C28A /* GeneralRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EF7F526BD7AFC0063C28A /* GeneralRoute.swift */; };
 		451EF7FB26BD7B540063C28A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EF7F926BD7B540063C28A /* HomeViewController.swift */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4509EF8726C2C76700BD9937 /* JAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JAButton.swift; sourceTree = "<group>"; };
 		451EF7F426BD7AFC0063C28A /* AppRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
 		451EF7F526BD7AFC0063C28A /* GeneralRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralRoute.swift; sourceTree = "<group>"; };
 		451EF7F926BD7B540063C28A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 			children = (
 				451EF80D26BD880A0063C28A /* JAView.swift */,
 				451EF80B26BD87000063C28A /* JAImageView.swift */,
+				4509EF8726C2C76700BD9937 /* JAButton.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -590,6 +593,7 @@
 				451EF80226BD7B840063C28A /* HomeRouter.swift in Sources */,
 				451EF81626BDB8F90063C28A /* HomeEndpoint.swift in Sources */,
 				451EF80A26BD83700063C28A /* UINavigationController+CE.swift in Sources */,
+				4509EF8826C2C76700BD9937 /* JAButton.swift in Sources */,
 				451EF81226BDB7E90063C28A /* NetworkService.swift in Sources */,
 				451EF7F726BD7AFC0063C28A /* GeneralRoute.swift in Sources */,
 				451EF81726BDB8F90063C28A /* HomeAPI.swift in Sources */,

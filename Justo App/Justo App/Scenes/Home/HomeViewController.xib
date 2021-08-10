@@ -18,6 +18,7 @@
                 <outlet property="passwordTextField" destination="Mht-F3-Agx" id="Oot-Ud-p4x"/>
                 <outlet property="phoneTextField" destination="Eog-6L-H35" id="vSx-Te-xhI"/>
                 <outlet property="pictureImageView" destination="32P-6R-gMD" id="VZw-b6-7bu"/>
+                <outlet property="reloadButton" destination="Zde-dq-d9V" id="cRV-NU-AMV"/>
                 <outlet property="versionLabel" destination="U2p-ag-Naa" id="3Ae-B0-ZIz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -65,20 +66,20 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujV-4G-9au">
-                    <rect key="frame" x="158" y="148" width="51" height="27"/>
-                    <fontDescription key="fontDescription" name="SinhalaSangamMN-Bold" family="Sinhala Sangam MN" pointSize="20"/>
+                    <rect key="frame" x="158" y="148" width="58.5" height="22"/>
+                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="18"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94g-i8-gLg">
-                    <rect key="frame" x="158" y="191" width="30.5" height="23"/>
-                    <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="17"/>
+                    <rect key="frame" x="158" y="186" width="34.5" height="22"/>
+                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCA-Gc-XSt">
-                    <rect key="frame" x="177" y="59" width="60.5" height="27"/>
-                    <fontDescription key="fontDescription" name="SinhalaSangamMN-Bold" family="Sinhala Sangam MN" pointSize="22"/>
+                    <rect key="frame" x="163" y="59" width="88.5" height="27"/>
+                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="24"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -87,32 +88,48 @@
                     <subviews>
                         <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dGD-iE-i3o" customClass="MDCFilledTextField">
                             <rect key="frame" x="0.0" y="8" width="374" height="34"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
                             <textInputTraits key="textInputTraits" textContentType="email"/>
                         </textField>
                         <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mht-F3-Agx" customClass="MDCFilledTextField">
                             <rect key="frame" x="0.0" y="67" width="374" height="34"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
                             <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                         </textField>
                         <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eog-6L-H35" customClass="MDCFilledTextField">
                             <rect key="frame" x="0.0" y="126" width="374" height="34"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
                             <textInputTraits key="textInputTraits" textContentType="tel"/>
                         </textField>
                         <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oNb-rC-0sc" customClass="MDCFilledTextField">
                             <rect key="frame" x="0.0" y="185" width="374" height="34"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
                             <textInputTraits key="textInputTraits" textContentType="address-level2"/>
                         </textField>
                         <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lo9-IT-KQ5" customClass="MDCFilledTextField">
                             <rect key="frame" x="0.0" y="244" width="374" height="34"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
                             <textInputTraits key="textInputTraits" textContentType="country-name"/>
                         </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zde-dq-d9V" customClass="JAButton" customModule="Justo_App" customModuleProvider="target">
+                            <rect key="frame" x="128" y="387" width="119" height="34"/>
+                            <color key="backgroundColor" red="0.34439545869999999" green="0.144199878" blue="0.27632367610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                            <state key="normal" title="Reload">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onClickReload:" destination="-1" eventType="touchUpInside" id="Flx-YY-zfe"/>
+                            </connections>
+                        </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2p-ag-Naa">
-                            <rect key="frame" x="164.5" y="583" width="57" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <rect key="frame" x="149.5" y="586" width="76" height="18"/>
+                            <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="18"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -122,16 +139,19 @@
                         <constraint firstItem="Lo9-IT-KQ5" firstAttribute="top" secondItem="oNb-rC-0sc" secondAttribute="bottom" constant="25" id="00F-4J-ycy"/>
                         <constraint firstAttribute="bottom" secondItem="U2p-ag-Naa" secondAttribute="bottom" constant="8" id="3Pd-sN-95q"/>
                         <constraint firstItem="dGD-iE-i3o" firstAttribute="top" secondItem="TAA-Om-Q52" secondAttribute="top" constant="8" id="5EL-dx-hfh"/>
-                        <constraint firstItem="U2p-ag-Naa" firstAttribute="centerX" secondItem="Lo9-IT-KQ5" secondAttribute="centerX" constant="6" id="5G3-fU-fDe"/>
+                        <constraint firstItem="U2p-ag-Naa" firstAttribute="centerX" secondItem="Lo9-IT-KQ5" secondAttribute="centerX" constant="0.5" id="5G3-fU-fDe"/>
                         <constraint firstAttribute="trailing" secondItem="dGD-iE-i3o" secondAttribute="trailing" id="EZF-e6-1nq"/>
+                        <constraint firstItem="Zde-dq-d9V" firstAttribute="leading" secondItem="TAA-Om-Q52" secondAttribute="leading" constant="128" id="HdC-RV-ahf"/>
                         <constraint firstItem="oNb-rC-0sc" firstAttribute="leading" secondItem="TAA-Om-Q52" secondAttribute="leading" id="IUu-uF-Yrc"/>
                         <constraint firstItem="Mht-F3-Agx" firstAttribute="top" secondItem="dGD-iE-i3o" secondAttribute="bottom" constant="25" id="K6C-YU-4TX"/>
                         <constraint firstAttribute="trailing" secondItem="oNb-rC-0sc" secondAttribute="trailing" id="KJt-WO-oE7"/>
                         <constraint firstAttribute="trailing" secondItem="Eog-6L-H35" secondAttribute="trailing" id="Pmg-zn-e8p"/>
                         <constraint firstAttribute="trailing" secondItem="Mht-F3-Agx" secondAttribute="trailing" id="Sbt-Vj-kHc"/>
                         <constraint firstItem="Eog-6L-H35" firstAttribute="top" secondItem="Mht-F3-Agx" secondAttribute="bottom" constant="25" id="dYJ-1i-gkt"/>
+                        <constraint firstItem="Zde-dq-d9V" firstAttribute="top" secondItem="Lo9-IT-KQ5" secondAttribute="bottom" constant="109" id="gID-FH-yni"/>
                         <constraint firstItem="oNb-rC-0sc" firstAttribute="top" secondItem="Eog-6L-H35" secondAttribute="bottom" constant="25" id="ggk-Nu-Yvg"/>
                         <constraint firstItem="Eog-6L-H35" firstAttribute="leading" secondItem="TAA-Om-Q52" secondAttribute="leading" id="nbf-to-cuS"/>
+                        <constraint firstAttribute="trailing" secondItem="Zde-dq-d9V" secondAttribute="trailing" constant="127" id="pV2-SI-lij"/>
                         <constraint firstAttribute="trailing" secondItem="Lo9-IT-KQ5" secondAttribute="trailing" id="pZO-q5-ZKs"/>
                         <constraint firstItem="dGD-iE-i3o" firstAttribute="leading" secondItem="TAA-Om-Q52" secondAttribute="leading" id="s5L-Xu-vpv"/>
                         <constraint firstItem="Mht-F3-Agx" firstAttribute="leading" secondItem="TAA-Om-Q52" secondAttribute="leading" id="waQ-0U-LUh"/>
@@ -172,6 +192,14 @@
             <point key="canvasLocation" x="34.782608695652179" y="103.79464285714285"/>
         </view>
     </objects>
+    <designables>
+        <designable name="Zde-dq-d9V">
+            <size key="intrinsicContentSize" width="61" height="34"/>
+        </designable>
+        <designable name="yPQ-UH-hTC">
+            <size key="intrinsicContentSize" width="360" height="800"/>
+        </designable>
+    </designables>
     <resources>
         <image name="back" width="192" height="341"/>
         <image name="background" width="360" height="800"/>
