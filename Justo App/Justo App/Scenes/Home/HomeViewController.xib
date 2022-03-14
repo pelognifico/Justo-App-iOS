@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,10 +15,10 @@
                 <outlet property="cityTextField" destination="oNb-rC-0sc" id="TlN-2g-T8C"/>
                 <outlet property="countryTextField" destination="Lo9-IT-KQ5" id="Te5-1p-Cme"/>
                 <outlet property="emailTextField" destination="dGD-iE-i3o" id="bbx-zg-758"/>
-                <outlet property="nameLabel" destination="ujV-4G-9au" id="UL3-9c-E8U"/>
+                <outlet property="nameLabel" destination="ujV-4G-9au" id="RLW-hH-5WO"/>
                 <outlet property="passwordTextField" destination="Mht-F3-Agx" id="Oot-Ud-p4x"/>
                 <outlet property="phoneTextField" destination="Eog-6L-H35" id="vSx-Te-xhI"/>
-                <outlet property="pictureImageView" destination="32P-6R-gMD" id="VZw-b6-7bu"/>
+                <outlet property="pictureImageView" destination="32P-6R-gMD" id="HEL-3Z-0hp"/>
                 <outlet property="reloadButton" destination="Zde-dq-d9V" id="cRV-NU-AMV"/>
                 <outlet property="versionLabel" destination="U2p-ag-Naa" id="3Ae-B0-ZIz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -113,7 +114,7 @@
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zde-dq-d9V" customClass="JAButton" customModule="Justo_App" customModuleProvider="target">
                             <rect key="frame" x="128" y="387" width="119" height="34"/>
-                            <color key="backgroundColor" red="0.34439545869999999" green="0.144199878" blue="0.27632367610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.34509803921568627" green="0.14509803921568626" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
                             <state key="normal" title="Reload">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
